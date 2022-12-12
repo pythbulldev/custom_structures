@@ -3,7 +3,7 @@ Repository with useful structures
 
 custom_event.Event - Class to conveniently store all coroutines that should be executed after some repetitive event
 Usage examples:
-
+```
 import custom_structures.custom_event as ce
 import asyncio
 
@@ -34,4 +34,4 @@ worker.on_data.subscribe(print_coroutine1)
 worker.worker_generated_something_to_pass()
 worker.on_data.unsubscribe(print_coroutine0)
 worker.on_data.unsubscribe(print_coroutine1)
-
+```
